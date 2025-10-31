@@ -1,13 +1,16 @@
 # %%
 from solid import cube, cylinder
-from utils import MyObj
+# from utils import MyObj
+from .myobj import MyObj
 
 # %%
 hole_segments = 64
 small_hole_r = 1.2 + 0.6
 small_hole_h = 9
-big_hole_r = 12/2 + 0.8
-big_hole_h = 8
+# big_hole_r = 12/2 + 0.8
+big_hole_r = 35/2
+# big_hole_h = 8
+big_hole_h = 1000
 big_hole_trans_h = 1.8
 ita_w = 12 + 0.5
 ita_d = 36.5

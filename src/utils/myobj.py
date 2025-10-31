@@ -1,5 +1,6 @@
 # %%
 import viewscad
+from copy import deepcopy
 
 from solid import union, scad_render_to_file
 from solid import rotate, translate, scale
@@ -47,6 +48,9 @@ class MyObj:
             self.objects = self.objects - obj.objects
         else:
             self.objects = self.objects - obj
+
+    def copy(self):
+        return deepcopy(self)
 
     def render(self):
         self.r.render(self.objects)
